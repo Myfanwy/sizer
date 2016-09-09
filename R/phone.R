@@ -1,8 +1,8 @@
 #' Export a phone-sized jpeg
-#' @description  Saves a plot object as a jpeg file that meets the dimension requirements of the "mobile devices and skins" product on society6.com (1300 pixels in width, 2000 pixels in height)
+#' @description  Saves a plot object as an image file that meets the dimension requirements of the "mobile devices and skins" product on society6.com (1300 pixels in width, 2000 pixels in height)
 #'
 #'
-#' @param filename the filename including the extension (currently only supports jpeg)
+#' @param filename the filename including the extension
 #' @param plot the plot object you want to export in the phone size
 #' @details Note: current options are jpg or png, and this function has NOT been tested on Windows.
 #' @examples
@@ -21,7 +21,7 @@ phone <- function(filename, plot, filetype = c("jpeg", "png"), dpi = 300) {
     plot
     dev.off()
   } else if (filetype == "png") {
-    png(file = filename, width = 1300, height = 2000, res = dpi, units = "px", bg = "transparent")
+    png(file = filename, width = 1300, height = 2000, res = dpi, units = "px")
     print(plot)
     dev.off()
   } else {

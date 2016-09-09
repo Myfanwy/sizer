@@ -7,12 +7,12 @@
 phone(filename, plot, filetype = c("jpeg", "png"), dpi = 300)
 }
 \arguments{
-\item{filename}{the filename including the extension (currently only supports jpeg)}
+\item{filename}{the filename including the extension}
 
 \item{plot}{the plot object you want to export in the phone size}
 }
 \description{
-Saves a plot object as a jpeg file that meets the dimension requirements of the "mobile devices and skins" product on society6.com (1300 pixels in width, 2000 pixels in height)
+Saves a plot object as an image file that meets the dimension requirements of the "mobile devices and skins" product on society6.com (1300 pixels in width, 2000 pixels in height)
 }
 \details{
 Note: current options are jpg or png, and this function has NOT been tested on Windows.
