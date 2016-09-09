@@ -1,0 +1,13 @@
+Package: sizer
+Type: Package
+Title: Exports R Plots to Pre-defined Sizes and File Types
+Version: 0.1.0
+Imports:
+    ggplot2 (>= 2.1.0)
+Author: Myfanwy Johnston
+Maintainer: Myfanwy Johnston <mrowlan1@gmail.com>
+Description: This package contains several functions to export pre-defined
+    sizes, many of which conform to Society6's art sizing requirements.
+License: MIT
+LazyData: TRUE
+RoxygenNote: 5.0.1
