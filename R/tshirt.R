@@ -1,4 +1,4 @@
-#' Export a phone-sized jpeg
+#' Export a t-shirt-sized image
 #' @description  Saves a plot object as an image file that meets the dimension requirements of the "T-shirts/V-necks/Tank Tops/Long Sleeve/Biker Tanks/Hoodies" product on society6.com (1300 pixels in width, 2000 pixels in height)
 #'
 #'

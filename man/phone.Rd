@@ -2,7 +2,7 @@
 % Please edit documentation in R/phone.R
 \name{phone}
 \alias{phone}
-\title{Export a phone-sized jpeg}
+\title{Export a phone-sized image}
 \usage{
 phone(filename, plot, filetype = c("jpeg", "png"), dpi = 300)
 }

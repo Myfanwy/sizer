@@ -2,7 +2,7 @@
 % Please edit documentation in R/tshirt.R
 \name{tshirt}
 \alias{tshirt}
-\title{Export a phone-sized jpeg}
+\title{Export a t-shirt-sized image}
 \usage{
 tshirt(filename, plot, filetype = c("jpeg", "png"), dpi = 300)
 }
