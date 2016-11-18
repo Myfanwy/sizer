@@ -27,5 +27,3 @@ generic <- function(filename, plot, filetype = c("jpeg", "png"), dpi = 300) {
   } else {
     message("You didn't specify a valid filetype")}
 }
-
-
