@@ -13,6 +13,7 @@
 #'## ggplot2 example
 #'p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) + geom_point(aes(color = Species))
 #'generic(filename = "iris_ggplot.png", plot = p, filetype ="png")
+#'@export
 
 
 generic <- function(filename, plot, filetype = c("jpeg", "png"), dpi = 300) {

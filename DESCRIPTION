@@ -8,4 +8,4 @@ Description: This package contains several functions to export pre-defined
     sizes, many of which conform to Society6's art sizing requirements.
 License: MIT
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 5.0.1.9000
