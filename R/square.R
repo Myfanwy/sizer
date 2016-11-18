@@ -5,6 +5,7 @@
 #' @param filename the filename including the extension
 #' @param plot the plot object you want to export
 #' @details Note: current options are jpg or png, and this function has NOT been tested on Windows.
+#' @export
 #' @examples
 #' # Base R example
 #' p <- plot(iris$Sepal.Length, y = iris$Petal.Length, type = "p", col = iris$Species)

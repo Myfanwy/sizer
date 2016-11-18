@@ -20,10 +20,10 @@ Note: current options are jpg or png, and this function has NOT been tested on W
 \examples{
 # Base R example
 p <- plot(iris$Sepal.Length, y = iris$Petal.Length, type = "p", col = iris$Species)
-generic(filename = "iris_baseR.jpeg", plot = p, filetype = "jpeg")
+tapestry(filename = "iris_baseR.jpeg", plot = p, filetype = "jpeg")
 
 ## ggplot2 example
 p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) + geom_point(aes(color = Species))
-generic(filename = "iris_ggplot.png", plot = p, filetype ="png")
+tapestry(filename = "iris_ggplot.png", plot = p, filetype ="png")
 }
 
