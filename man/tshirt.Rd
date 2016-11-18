@@ -4,7 +4,7 @@
 \alias{tshirt}
 \title{Export a t-shirt-sized image}
 \usage{
-tshirt(filename, plot, filetype = c("jpeg", "png"), dpi = 300)
+tshirt(filename = "plot", plot, filetype = c("jpeg", "png"), dpi = 300)
 }
 \arguments{
 \item{filename}{the filename including the extension}

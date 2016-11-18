@@ -4,7 +4,7 @@
 \alias{square}
 \title{Export the a 6000 x 6000 px jpeg or png image}
 \usage{
-square(filename, plot, filetype = c("jpeg", "png"), dpi = 300)
+square(filename = "plot", plot, filetype = c("jpeg", "png"), dpi = 300)
 }
 \arguments{
 \item{filename}{the filename including the extension}
@@ -18,12 +18,14 @@ Saves a plot object as an image file that meets the dimension requirements of mo
 Note: current options are jpg or png, and this function has NOT been tested on Windows.
 }
 \examples{
-# Base R example
-p <- plot(iris$Sepal.Length, y = iris$Petal.Length, type = "p", col = iris$Species)
-generic(filename = "iris_baseR.jpeg", plot = p, filetype = "jpeg")
 
 ## ggplot2 example
 p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) + geom_point(aes(color = Species))
-generic(filename = "iris_ggplot.png", plot = p, filetype ="png")
+square(filename = "iris_ggplot.png", plot = p, filetype ="png")
+
+## Base R Plot workflow:
+plot(x)
+dev.print(jpeg, "x.jpeg", width = 9000, height = 7500, res = 300, units = "px")
+dev.off()
 }
 
