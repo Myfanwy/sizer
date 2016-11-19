@@ -12,11 +12,11 @@
 
 tshirt <- function(filename = "plot", plot, filetype = c("jpeg", "png"), dpi = 300) {
   if(filetype == "jpeg") {
-    dev.print(jpeg, file = filename, width = 3300, height = 5100, res = dpi, units = "px")
+    dev.print(jpeg, file = filename, width = 5100, height = 3300, res = dpi, units = "px")
     print(plot)
     dev.off()
   } else if (filetype == "png") {
-    dev.print(png, file = filename, width = 3300, height = 5100, res = dpi, units = "px",
+    dev.print(png, file = filename, width = 5100, height = 3300, res = dpi, units = "px",
               bg = "transparent")
     print(plot)
     dev.off()
